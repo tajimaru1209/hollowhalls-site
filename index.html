@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollow Halls — Help &amp; Privacy</title>
+<meta name="description" content="Help and privacy policy for Hollow Halls, a top-down stealth horror game for iPhone where you hide by sound.">
+<style>
+  :root {
+    --ink: #0b0a07; --panel: #16140e; --panel-hi: #211e15;
+    --paper: #efe1a2; --paper-deep: #b59d58; --text: #ece6d2;
+    --sub: #9b9584; --red: #e2463c; --green: #8ff0a8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background-image: repeating-linear-gradient(0deg, rgba(0,0,0,.35) 0 1px, transparent 1px 3px);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 16px 80px; }
+  .rec { display: flex; justify-content: space-between; font: 700 14px/1 ui-monospace, Menlo, monospace; color: var(--sub); margin-bottom: 36px; }
+  .rec b { color: var(--red); }
+  .rec b::before { content: "● "; animation: blink 1.6s infinite; }
+  @keyframes blink { 50% { opacity: .15; } }
+  header { text-align: center; margin-bottom: 44px; }
+  h1 {
+    margin: 0; font: 900 64px/1 ui-monospace, Menlo, monospace; letter-spacing: .02em; color: var(--paper);
+    text-shadow: 2px 0 rgba(226,70,60,.65), -2px 0 rgba(80,200,220,.5);
+  }
+  .tag { font-family: ui-monospace, Menlo, monospace; color: var(--sub); margin: 18px 0 0; }
+  section { background: var(--panel); border: 1px solid rgba(239,225,162,.12); padding: 24px 22px; margin: 18px 0; }
+  h2 { font: 800 20px/1.3 ui-monospace, Menlo, monospace; letter-spacing: .06em; margin: 0 0 12px; color: var(--paper); }
+  h3 { font-size: 16px; margin: 18px 0 4px; color: var(--paper-deep); }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .sub { color: var(--sub); }
+  .rings { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 14px 0 4px; }
+  .rings div { background: var(--panel-hi); padding: 12px; text-align: center; font: 700 13px/1.4 ui-monospace, Menlo, monospace; }
+  .rings i { display: block; width: 34px; height: 34px; margin: 0 auto 8px; border-radius: 50%; border: 3px solid; }
+  @media (max-width: 560px) { h1 { font-size: 48px; } .rings { grid-template-columns: 1fr; } }
+  a { color: var(--green); }
+  .contact { display: inline-block; margin-top: 8px; padding: 12px 20px; background: var(--paper); color: var(--ink); font: 800 15px/1 ui-monospace, Menlo, monospace; text-decoration: none; letter-spacing: .08em; }
+  footer { text-align: center; color: var(--sub); font: 13px ui-monospace, Menlo, monospace; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="rec"><b>REC</b><span>CAM-01</span></div>
+  <header>
+    <h1>HOLLOW<br>HALLS</h1>
+    <p class="tag">you shouldn't be here.</p>
+  </header>
+
+  <section>
+    <h2>THE TAPE</h2>
+    <p>Hollow Halls is a top-down stealth horror game. You wake up in endless, empty halls with a flashlight and nothing else. Somewhere in the dark is a door marked EXIT — and something that hunts by sound.</p>
+    <p>It has no eyes. It hears your footsteps, and it feels light pointed at it.</p>
+  </section>
+
+  <section>
+    <h2>SEE THE SOUND</h2>
+    <p>Every sound in Hollow Halls appears as a ring. Rings show through walls, so you can read the dark without seeing it.</p>
+    <div class="rings">
+      <div><i style="border-color:#fff"></i>WHITE<br><span class="sub">your noise</span></div>
+      <div><i style="border-color:var(--red)"></i>RED<br><span class="sub">it is moving</span></div>
+      <div><i style="border-color:var(--green)"></i>GREEN<br><span class="sub">the way out</span></div>
+    </div>
+    <h3>Move</h3>
+    <p>Touch anywhere on the lower half of the screen and drag. A small push sneaks almost silently. A full push runs — fast, but loud.</p>
+    <h3>Hold</h3>
+    <p>Hold the lungs button to kill your light and go completely silent. You can only hold your breath for a few seconds. Run out of air and you gasp, loud enough for anything nearby to hear.</p>
+    <h3>Battery</h3>
+    <p>Your flashlight drains over time and its beam shrinks. Batteries along the way recharge it. Almond Water lets you move fast and silent for a few seconds.</p>
+    <h3>Sonar</h3>
+    <p>Once per level, Sonar pings the exit and points the way for a few seconds.</p>
+  </section>
+
+  <section>
+    <h2>LEVELS</h2>
+    <p><strong>Level 0 — The Lobby.</strong> <span class="sub">Yellow wallpaper, damp carpet, the hum of the lights.</span></p>
+    <p><strong>Level 1 — The Storeroom.</strong> <span class="sub">Bare concrete, wider halls, more than one of them.</span></p>
+    <p><strong>Level 2 — The Pipeworks.</strong> <span class="sub">Narrow pipes and bursts of steam. Steam hides you from sight and covers your steps.</span></p>
+    <p><strong>Endless.</strong> <span class="sub">It keeps going down.</span></p>
+    <p class="sub">Each maze is generated fresh every time you play. Escape a level to unlock the next one in Level Select.</p>
+  </section>
+
+  <section>
+    <h2>QUESTIONS</h2>
+    <h3>Does it work with headphones?</h3>
+    <p>It's best with them. Footsteps are panned left and right, so you can tell where it is.</p>
+    <h3>Can I turn off sound or vibration?</h3>
+    <p>Yes, with the SOUND and VIBRATION buttons on the title screen. Sound also follows your iPhone's silent switch.</p>
+    <h3>What does Remove Ads + Perks include?</h3>
+    <p>One purchase removes the full-screen ads between levels, lets you use Revive and Sonar without watching an ad, and unlocks Camcorder Mode, a warm home-video look with a date stamp.</p>
+    <h3>I reinstalled the app. How do I get my purchase back?</h3>
+    <p>Tap RESTORE on the title screen, signed in with the same Apple Account you used to buy it.</p>
+    <h3>Is it scary?</h3>
+    <p>It's tense rather than gory. There is no blood, but there are sudden scares when you're caught.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>PRIVACY POLICY</h2>
+    <p class="sub">Last updated November 14, 2026</p>
+    <p>Hollow Halls does not ask for an account and does not collect personal information such as your name, email address, contacts, photos or location.</p>
+    <h3>Advertising</h3>
+    <p>The free version shows ads through Unity Ads (Unity Technologies). Ads are requested as non-personalized, and the app never asks for permission to track you across other apps. To show and measure ads, prevent fraud and limit how often you see the same ad, Unity may receive technical information such as your device model, operating system, IP address, and how you interact with ads. See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's privacy policy</a> for details.</p>
+    <p>If you buy Remove Ads + Perks, full-screen ads are no longer shown.</p>
+    <h3>Purchases</h3>
+    <p>Purchases are handled by Apple. The app only receives confirmation that the purchase was made; it never sees your payment details.</p>
+    <h3>On your device</h3>
+    <p>Your unlocked levels and settings (sound, vibration, Camcorder Mode) are saved only on your iPhone and are removed when you delete the app.</p>
+    <h3>Children</h3>
+    <p>Hollow Halls is not directed at children under 13.</p>
+    <p>If this policy changes, the update will be posted on this page.</p>
+  </section>
+
+  <section>
+    <h2>CONTACT</h2>
+    <p>Found a bug, or got stuck somewhere strange? Get in touch.</p>
+    <a class="contact" href="mailto:tajimaru1209@gmail.com?subject=Hollow%20Halls%20Support">EMAIL SUPPORT</a>
+  </section>
+
+  <footer>PLAY ▶ &nbsp;© 2026 Hiroaki Tajima</footer>
+</div>
+</body>
+</html>
